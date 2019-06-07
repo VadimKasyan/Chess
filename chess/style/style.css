@@ -1,0 +1,135 @@
+body{
+	background-color: #333;
+	overflow: hidden;
+	margin: 0px;
+}
+::placeholder {
+	color: rgba(255,255,255, 0.7)
+}
+.game{
+	width: 100vh;
+	height: 100vh;
+	background-color: rgb(255,248,220);
+}
+.chess-table{
+	width: 100%;
+	height: 100%;
+	border: 0px;
+}
+.table-cell{
+	background-repeat: no-repeat;
+	  background-position: center; 
+	  background-size: 85% 85%;
+}
+.brawn-light{
+	background-color: rgb(255, 214, 163);
+}
+.brawn-dark{
+	background-color: rgb(119,49,9);
+}
+.content{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: calc(100vw - 100vh);
+	height: 100vh;
+	background-color: #333;
+}
+.menu{
+	top: 0px;
+	height: 40px;
+	width: 100%;
+	text-align: right;
+}
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+} 
+li{
+	float: left;
+}
+li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li a:hover {
+	background-color: #111;
+}
+li p{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	margin: 0px;
+}
+.menu-content{
+	height: calc(100% - 45px);
+	width: 100%;
+	background-color: #333;
+}
+.column{
+	text-align: center;
+	float: left;
+	width: 50%;
+}
+div p{
+	text-align: center;
+	color: white;
+}
+.content-button{
+	width: 100px;
+	height: 30px;
+	color: white;
+	background-color: rgb(36, 112, 38);
+	border-color: rgb(36, 112, 38);
+	align-self: center;
+}
+.content-button:hover{
+	background-color: #111;
+	border-color: #111;
+}
+.chat-content, .game-content{
+	margin-left: 0px;
+	margin-top: 20px;
+	width: 100%;
+	height: 100%;
+}
+textarea{
+	margin-left: 2%;
+	width: 96%;
+	height: calc(100% - 120px);
+	background-color: #555;
+	resize: none;
+	border-color: #333;
+	color: white;
+}
+.input{
+	height: 27px;
+	background-color: #555;
+	outline: none;
+	margin: 1% 0% 0% 2%;
+	border: none;
+	color: white;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+#message{
+	margin-left: 2%;
+	width: calc(100% - 130px);
+}
+.right{
+	float: right;
+	margin: 1%;
+}

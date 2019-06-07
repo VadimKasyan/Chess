@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="Description" content="Chess game">
+	<link href="/style/style.css" rel="stylesheet" type="text/css">
+	<link href="/style/media.css" rel="stylesheet" type="text/css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+	<script src="js/jQuery-3.4.1.js"></script>
+	<title>Chess</title>
+</head>
+
+<body>
+	<div class="game"></div>
+
+	<div class="content">
+		<div class="menu">
+			<ul class="nav-menu">
+				<li><a href="#" onclick="menuSwitch(0)">Connection</a></li>
+				<li><a href="#" onclick="menuSwitch(1)">Game</a></li>
+				<li class="players-online"><p>online:</p></li>
+			</ul>
+		</div>
+		<div class="menu-content">
+			<div class="connection-content">
+				<div class="row">
+					<div class="column">
+						<p>Play with friend</p>
+						<button class="content-button" onclick="createRoom()">Create room</button><p></p>
+						<input type="number" class="input" id="roomID" placeholder="Room id" style="width: 100px;"> 
+						<button class="content-button" onclick="joinRoom()">Join room</button>
+						
+					</div>
+					<div class="column">
+						<p>Find random player</p>
+						<button class="content-button" onclick="findRoom()">Search</button>
+					</div>
+				</div>
+			</div>
+			<div class="game-content" style="display: none;">
+				<button class="content-button right" onclick="surrender()">Surrender</button>
+				<button class="content-button right" onclick="draw()">Draw</button>
+				<textarea disabled id="textArea"></textarea>
+				<input type="text" class="input" id="message" placeholder="Type message..."> 
+				<button class="content-button" onclick="sendMessage()">Send</button>
+			</div>
+		</div>
+	</div>
+	<div class="show-content-partrait" >
+		<button class="content-button right" onclick="showContent()">&#9776;</button>
+	</div>
+
+	<script src="js/game.js"></script>
+</body>
+</html>
